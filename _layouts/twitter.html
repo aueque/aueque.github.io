@@ -1,0 +1,35 @@
+<HTML>
+<link href="css/foundation.css" rel="stylesheet" type="text/css" />
+<link href="css/aueque.css" rel="stylesheet" type="text/css" />
+<link href="css/foundation-icons.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+
+<body>
+	{% include navbar.html %}
+</body>
+<div id="home">
+	{% include home.html %}
+</div>
+<div id="tweetList" class="hidden">
+	<h2>Twitter</h2>
+</div>
+<div id="instagramContent" class="hidden">
+	{% include instagram.html %}
+</div>
+<div id="tumblrFeed" class="hidden">
+	<h2>About</h2>
+</div>
+<div id="snapChatFeed" class="hidden">
+	<h2>Snap Stories</h2>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/aueque.js"></script>
+<script src="js/TwitterPostFetcherMin.js"></script>
+<script src="js/instafeed.min.js"></script>
+<script src="http://aueque.tumblr.com/api/read/json"></script>
+<script src="js/auequeTwitter.js"></script>
+<script src="js/auequeInstagram.js"></script>
+<script src="js/auequeTumblr.js"></script>
+</HTML>
