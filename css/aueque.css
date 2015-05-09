@@ -1,46 +1,46 @@
 
 /*
-	Icon Bar Color Properties
+  Icon Bar Color Properties
 */
 .icon-bar-blog-about{
-	background: #8C88A0 !important;
+  background: #8C88A0 !important;
 }
 
 .icon-bar-instagram {
-	background: #125688 !important;
+  background: #125688 !important;
 }
 
 .icon-bar-snapChat {
-	background: #149675 !important;
+  background: #149675 !important;
 }
 
 .icon-bar-twitter{
-	background: #0080AE !important;
+  background: #0080AE !important;
 }
 
 .icon-bar-blog-about > a.active {
     background: #B6B4C5; }
 
 .icon-bar-blog-about > a:hover {
-	background: #B6B4C5; }
+  background: #B6B4C5; }
 
 .icon-bar-twitter > a.active {
     background: #FFFFFF; }
 
 .icon-bar-twitter > a:hover {
-	background: #FFFFFF; }
+  background: #FFFFFF; }
 
 .icon-bar-instagram > a.active {
     background: #FFFFFF; }
 
 .icon-bar-instagram > a:hover {
-	background: #FFFFFF; }
+  background: #FFFFFF; }
 
 .icon-bar-snapChat > a.active {
     background: #FFFF0A; }
 
 .icon-bar-snapChat > a:hover {
-	background: #FFFF0A; }
+  background: #FFFF0A; }
 
 .fixedElement {
     position:fixed;
@@ -73,11 +73,11 @@
  **/
 
 .hidden {
-	display: none;
+  display: none;
 }
 
 .visible {
-	display: block;
+  display: block;
 }
 
 /**
@@ -152,6 +152,8 @@
 .instagramUserInformationFormatting{
   margin-top: 35px;
   margin-bottom: 10px;
+  font-weight:500;
+  font-size:2.4em;
 }
 
 .instagramPhotoAndNameFormatting{
@@ -178,7 +180,8 @@
 .instagramUserSpecsHeadingFormatting{
   font-family: Arial;
   color: #000000;
-  font-size: 3.5em; 
+  font-size: 2.5em;
+  font-weight: 500;
 }
 
 .instagramUserInformationFormatting{
@@ -209,12 +212,26 @@
 **/
 
 .logoConstructionImageStyling{
-  opacity: 0.2 !important;
+  opacity: 0.5 !important;
   margin-top:50px !important;
 }
 
 .fontConstructionFormatting{
   font-family: Arial;
-  opacity: 0.2 !important;
+  opacity: 0.5 !important;
+  color:#FFFFFF;
   font-size: 3.5em; 
+  margin-top:75px;
+}
+
+.fontConstructionFormattingSmallMarginTop{
+  font-family: Arial;
+  opacity: 0.5 !important;
+  color:#FFFFFF;
+  font-size: 3.5em; 
+  margin-top: 30px;
+}
+
+.constructionBackgroundFormatting{
+  background-color: #8C88A0
 }
