@@ -240,3 +240,11 @@
 .constructionBackgroundFormatting{
   background-color: #8C88A0
 }
+
+/**
+Facebook styling
+**/
+
+.fb-comments, .fb-comments iframe[style], .fb-comments span {
+   width: 100% !important;
+}
