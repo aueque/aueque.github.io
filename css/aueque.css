@@ -245,6 +245,6 @@
 Facebook styling
 **/
 
-.fb-page iframe[style], .fb_iframe_widget span{
+#fb-page{
    width: 100% !important;
 }
