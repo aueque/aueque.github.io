@@ -245,6 +245,6 @@
 Facebook styling
 **/
 
-.fb-comments, .fb-comments iframe[style], .fb-comments span {
+.fb-page iframe[style], .fb_iframe_widget span{
    width: 100% !important;
 }
