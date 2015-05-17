@@ -26,7 +26,7 @@
           if (response && !response.error) {
             console.log(response);
           } else {
-            console.log("error" + response);
+            console.log(response);
           }
         }
       );  
