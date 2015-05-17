@@ -1,7 +1,33 @@
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=1446327355664409";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1448417798788698',
+          xfbml      : true,
+          version    : 'v2.3'
+        });
+
+        FB.getLoginStatus(function(response){
+          getUserFeed();
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+
+
+    function getUserFeed(){
+        FB.api(
+        "/271380496376837/feed",
+        function (response) {
+          if (response && !response.error) {
+            console.log(response);
+          } else {
+            console.log("error");
+          }
+        }
+      );  
+    }
