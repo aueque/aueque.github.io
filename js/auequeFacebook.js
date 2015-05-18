@@ -9,7 +9,7 @@
         FB.getLoginStatus(function(response){
         	//User has approved our application
         	if(response.status == 'connected'){
-        		collectUserInformation();
+        		collectUserInformation(response);
         		getUserFeed();		
         	} else if(response.status == 'not_authorized'){
         		//Ask the user to approve the application
@@ -37,7 +37,7 @@
 	   		if (response.authResponse) {
 	     		console.log('Welcome!  Fetching your information.... ');
 	     		FB.api('/me', function(response) {
-	       			collectUserInformation();
+	       			collectUserInformation(response);
 	       			getUserFeed();
 	     		});
 	   		} else {
@@ -47,7 +47,7 @@
     }
 
     //Once a user is authenticated we must then collect their information
-    function collectUserInformation(var response){
+    function collectUserInformation(response){
     	var uid = response.authResponse.userID;
     	var accessToken = response.authResponse.accessToken;
     }
