@@ -9,8 +9,7 @@
         FB.getLoginStatus(function(response){
         	//User has approved our application
         	if(response.status == 'connected'){
-        		var uid = response.authResponse.userID;
-    			var accessToken = response.authResponse.accessToken;
+        		collectUserInformation();
         		getUserFeed();		
         	} else if(response.status == 'not_authorized'){
         		//Ask the user to approve the application
@@ -38,12 +37,18 @@
 	   		if (response.authResponse) {
 	     		console.log('Welcome!  Fetching your information.... ');
 	     		FB.api('/me', function(response) {
-	       			console.log('Good to see you, ' + response.name + '.');
+	       			collectUserInformation();
+	       			getUserFeed();
 	     		});
 	   		} else {
 	     		console.log('User cancelled login or did not fully authorize.');
 	   		}
  		});
+    }
+
+    function collectUserInformation(){
+    	var uid = response.authResponse.userID;
+    	var accessToken = response.authResponse.accessToken;
     }
 
     //Retrieves the feed for facebook.com/aueuque
