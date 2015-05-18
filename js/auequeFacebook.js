@@ -55,7 +55,7 @@
     //Retrieves the feed for facebook.com/aueuque
 	function getUserFeed(){
         FB.api(
-        "/271380496376837/feed",
+        "/271380496376837",
         function (response) {
           if (response && !response.error) {
             console.log(response);
@@ -65,3 +65,8 @@
         }
       );  
     }
+
+    function populateFacebookFeed(facebookFeedResponse){
+
+    }
+
