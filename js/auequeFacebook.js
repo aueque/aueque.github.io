@@ -46,7 +46,8 @@
  		});
     }
 
-    function collectUserInformation(){
+    //Once a user is authenticated we must then collect their information
+    function collectUserInformation(var response){
     	var uid = response.authResponse.userID;
     	var accessToken = response.authResponse.accessToken;
     }
